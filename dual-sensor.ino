@@ -4,7 +4,7 @@
 #define triggerPin2 D3
 #define echoPin2    D4
 
-#define buzzer      D5
+#define buzzer      D6
 
 // Distance threshold in centimeters
 #define THRESHOLD   50
