@@ -44,5 +44,5 @@ This project uses **two HC-SR04 ultrasonic sensors** to measure the distance of 
 #define echoPin1    D2
 #define triggerPin2 D3
 #define echoPin2    D4
-#define buzzer      D5
+#define buzzer      D6
 #define THRESHOLD   50
