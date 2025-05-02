@@ -25,7 +25,7 @@ This project uses **two HC-SR04 ultrasonic sensors** to measure the distance of 
 | Sensor 1 ECHO   | D2         |
 | Sensor 2 TRIG   | D3         |
 | Sensor 2 ECHO   | D4         |
-| Buzzer          | D6         |
+| Buzzer          | D0         |
 
 > ⚠️ Make sure your sensor's ECHO pins are 5V tolerant or use a voltage divider if needed.
 
@@ -44,5 +44,5 @@ This project uses **two HC-SR04 ultrasonic sensors** to measure the distance of 
 #define echoPin1    D2
 #define triggerPin2 D3
 #define echoPin2    D4
-#define buzzer      D6
+#define buzzer      D0
 #define THRESHOLD   50
