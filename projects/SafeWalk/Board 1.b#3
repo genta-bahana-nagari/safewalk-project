@@ -174,16 +174,6 @@
 <text x="61.976" y="64.262" size="2.54" layer="1" align="center">-</text>
 <text x="82.399" y="59.19" size="2.54" layer="1" align="center">-</text>
 <text x="82.169" y="72.39" size="1.4224" layer="1" align="center">+</text>
-<text x="16.383" y="22.987" size="1.778" layer="1">Sensor 1</text>
-<text x="17.018" y="39.497" size="1.778" layer="1">Sensor 2</text>
-<text x="50.927" y="66.548" size="1.778" layer="1" rot="R90">Battery</text>
-<text x="81.153" y="49.53" size="1.778" layer="1">Buzzer</text>
-<text x="90.932" y="11.303" size="0.8128" layer="1">D0</text>
-<text x="88.265" y="11.176" size="0.8128" layer="1">D1</text>
-<text x="85.598" y="11.176" size="0.8128" layer="1">D2</text>
-<text x="35.179" y="71.247" size="1.6764" layer="16" rot="MR0">Safewalk Projet
-Danes-Aul-Bijak-Adzima-Genta
-Della-Kaysa-Kevin-Memed</text>
 </plain>
 <libraries>
 <library name="Ultrasonic Sensor HC-SR04">
@@ -983,13 +973,12 @@ design rules under a new name.</description>
 <wire x1="39.115" y1="18.16" x2="39.878" y2="18.16" width="0.635" layer="16"/>
 <wire x1="84.71" y1="18.16" x2="88.773" y2="14.097" width="0.635" layer="16"/>
 <wire x1="21.59" y1="17.78" x2="22.987" y2="17.78" width="0.635" layer="16"/>
-<wire x1="22.987" y1="17.78" x2="24.3835" y2="16.3835" width="0.635" layer="16"/>
-<wire x1="24.3835" y1="16.3835" x2="24.638" y2="16.129" width="0.635" layer="16"/>
-<wire x1="35.433" y1="15.24" x2="37.084" y2="16.891" width="0.635" layer="16"/>
+<wire x1="22.987" y1="17.78" x2="24.638" y2="16.129" width="0.635" layer="16"/>
+<wire x1="24.638" y1="16.129" x2="24.638" y2="15.494" width="0.635" layer="16"/>
+<wire x1="24.638" y1="15.494" x2="35.687" y2="15.494" width="0.635" layer="16"/>
+<wire x1="35.687" y1="15.494" x2="37.084" y2="16.891" width="0.635" layer="16"/>
 <wire x1="38.353" y1="18.16" x2="37.084" y2="16.891" width="0.6096" layer="16"/>
 <wire x1="39.878" y1="18.16" x2="38.353" y2="18.16" width="0.6096" layer="16"/>
-<wire x1="24.3835" y1="16.3835" x2="25.527" y2="15.24" width="0.6096" layer="16"/>
-<wire x1="25.527" y1="15.24" x2="35.433" y2="15.24" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="SV1" pad="13"/>
@@ -1152,10 +1141,6 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
