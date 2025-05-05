@@ -724,7 +724,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -742,15 +742,15 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mdWireWire" value="40mil"/>
+<param name="mdWirePad" value="40mil"/>
+<param name="mdWireVia" value="40mil"/>
+<param name="mdPadPad" value="40mil"/>
+<param name="mdPadVia" value="40mil"/>
+<param name="mdViaVia" value="40mil"/>
+<param name="mdSmdPad" value="40mil"/>
+<param name="mdSmdVia" value="40mil"/>
+<param name="mdSmdSmd" value="40mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="40mil"/>
@@ -1065,12 +1065,32 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="J_ULTRASONIC_4" pad="ECHO"/>
 <contactref element="SV1" pad="12"/>
-<wire x1="22.343" y1="39.338" x2="84.696" y2="14.104" width="0" layer="19" extent="1-1"/>
+<wire x1="22.343" y1="39.338" x2="16.097" y2="39.338" width="0.8128" layer="16"/>
+<wire x1="16.097" y1="39.338" x2="11.811" y2="35.052" width="0.8128" layer="16"/>
+<wire x1="11.811" y1="35.052" x2="11.811" y2="12.446" width="0.8128" layer="16"/>
+<wire x1="11.811" y1="12.446" x2="18.288" y2="5.969" width="0.8128" layer="16"/>
+<wire x1="80.391" y1="5.969" x2="18.288" y2="5.969" width="0.8128" layer="16"/>
+<wire x1="84.696" y1="14.104" x2="84.696" y2="10.274" width="0.8128" layer="16"/>
+<wire x1="84.696" y1="10.274" x2="80.391" y2="5.969" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="J_ULTRASONIC_4" pad="TRIG"/>
 <contactref element="SV1" pad="11"/>
-<wire x1="22.343" y1="36.798" x2="82.156" y2="14.104" width="0" layer="19" extent="1-1"/>
+<wire x1="22.343" y1="36.798" x2="17.24" y2="36.798" width="0.8128" layer="16"/>
+<wire x1="17.24" y1="36.798" x2="14.478" y2="34.036" width="0.8128" layer="16"/>
+<wire x1="14.478" y1="34.036" x2="14.478" y2="13.522" width="0.8128" layer="16"/>
+<wire x1="14.478" y1="13.522" x2="19.397" y2="8.603" width="0.8128" layer="16"/>
+<wire x1="19.397" y1="8.603" x2="79.342" y2="8.603" width="0.8128" layer="16"/>
+<wire x1="82.156" y1="11.417" x2="82.156" y2="14.104" width="0.8128" layer="16"/>
+<wire x1="79.342" y1="8.603" x2="82.156" y2="11.417" width="0.8128" layer="16"/>
+</signal>
+<signal name="TST">
+<polygon width="1.016" layer="16">
+<vertex x="0" y="80"/>
+<vertex x="0" y="0"/>
+<vertex x="100" y="0"/>
+<vertex x="100" y="80"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -1080,6 +1100,27 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="5,1,f908623bdbf4f239"/>
+<approved hash="5,1,15aea4bc903fb53b"/>
+<approved hash="5,1,f89a57c0efd5f271"/>
+<approved hash="5,1,7f4e75408208397b"/>
+<approved hash="5,1,6889369bf2021b02"/>
+<approved hash="5,1,7ef8616f95493ba3"/>
+<approved hash="5,16,8cf8736204a89c7d"/>
+<approved hash="5,16,974dd83df3a64d71"/>
+<approved hash="5,16,7f4e75408208397b"/>
+<approved hash="5,16,6889369bf2021b02"/>
+<approved hash="5,16,7ef8616f95493ba3"/>
+<approved hash="5,16,8b2940de6a85c2cc"/>
+<approved hash="5,16,dd9e1830157a3ca8"/>
+<approved hash="5,16,f2a70b7229815291"/>
+<approved hash="5,16,1d0e2555384f51f8"/>
+<approved hash="5,16,f908623bdbf4f239"/>
+<approved hash="5,16,15aea4bc903fb53b"/>
+<approved hash="5,16,f89a57c0efd5f271"/>
+<approved hash="23,16,e79955e556ffe483"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
